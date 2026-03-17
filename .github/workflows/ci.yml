@@ -23,11 +23,11 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       # Step 4: Run tests
       - name: Run tests
-        run: npm test
+        run: npx jest
 
       # Step 5: Build Docker image
       - name: Build Docker Image
