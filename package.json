@@ -1,0 +1,15 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "Building and deploying task manager application",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
