@@ -1,5 +1,9 @@
-let tasks = [];
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 let currentFilter = "all";
+
+function saveTasks() {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
 
 function addTask() {
     const input = document.getElementById("taskInput");
@@ -16,6 +20,7 @@ function addTask() {
         done: false
     });
 
+    saveTasks();   // ✅ ADD THIS
     input.value = "";
     renderTasks();
 }
@@ -58,11 +63,13 @@ function renderTasks() {
 
 function toggleDone(index) {
     tasks[index].done = !tasks[index].done;
+    saveTasks();   // ✅ ADD THIS
     renderTasks();
 }
 
 function deleteTask(index) {
     tasks.splice(index, 1);
+    saveTasks();   // ✅ ADD THIS
     renderTasks();
 }
 
@@ -70,3 +77,5 @@ function filterTasks(filter) {
     currentFilter = filter;
     renderTasks();
 }
+
+renderTasks();
