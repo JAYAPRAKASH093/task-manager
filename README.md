@@ -1,51 +1,49 @@
-📌 Task Manager Application (DevOps Project)
-🚀 Project Overview
+# 📝 Task Manager Application
 
-This is a Task Manager Web Application built using HTML, CSS, and JavaScript, designed to manage daily tasks with features like:
+A simple and interactive Task Manager web application built using **HTML, CSS, and JavaScript**, enhanced with **DevOps practices** including Docker, CI/CD, AWS deployment, and monitoring using Prometheus and Grafana.
 
-Add and delete tasks
+---
 
-Mark tasks as completed
+## 🚀 Project Overview
 
-Filter tasks by priority
+This application allows users to:
 
-Persistent storage using browser localStorage
+- Add tasks
+- Delete tasks
+- Mark tasks as completed
+- Filter tasks by priority
+- Persist tasks using browser localStorage
 
-This project is extended with a complete DevOps lifecycle, including:
+### DevOps Implementation
 
-Git version control
+- Git version control
+- CI/CD using GitHub Actions
+- Docker containerization
+- AWS EC2 deployment
+- Monitoring with Prometheus & Grafana
 
-Docker containerization
+---
 
-CI/CD using GitHub Actions
+## 📦 Prerequisites
 
-Deployment on AWS EC2
+Ensure you have the following installed:
 
-Monitoring using Prometheus and Grafana
+- Git
+- Node.js (v16 or above)
+- npm
+- Docker
+- AWS account (for deployment)
+- GitHub account
 
-🛠️ Prerequisites
+---
 
-Before running the project, ensure you have:
+## ⚙️ Setup Instructions
 
-🔹 Local Development
+### 🔹 1. Clone Repository
 
-Node.js (v16 or above)
-
-npm (comes with Node)
-
-Git installed
-
-🔹 DevOps / Deployment
-
-Docker installed
-
-AWS account (for EC2 deployment)
-
-GitHub account (for CI/CD)
-
-⚙️ Setup Instructions
-🔹 1. Clone the Repository
+```bash
 git clone https://github.com/<your-username>/task-manager-devops.git
+cd task-manager-devops
 cd task-manager-devops
 🔹 2. Install Dependencies (for testing)
 npm install
