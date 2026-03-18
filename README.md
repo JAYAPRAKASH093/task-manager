@@ -44,7 +44,6 @@ Ensure you have the following installed:
 ```bash
 git clone https://github.com/<your-username>/task-manager-devops.git
 cd task-manager-devops
-cd task-manager-devops
 🔹 2. Install Dependencies (for testing)
 npm install
 🔹 3. Run Tests
@@ -112,7 +111,7 @@ Access:
 
 http://<public-ip>:3000
 
-Login:
+Login Credentials:
 
 Username: admin
 Password: admin
@@ -120,7 +119,7 @@ Password: admin
 
 Add Prometheus as data source
 
-Query:
+Use query:
 
 up
 🧠 Meaning
@@ -128,12 +127,12 @@ up
 0 → Application is down
 ▶️ Run Instructions (Summary)
 🔹 Local
-open index.html
+Open index.html
 🔹 Docker
 docker build -t task-manager .
 docker run -p 80:80 task-manager
 🔹 AWS
-ssh into EC2 → run Docker container → access via public IP
+SSH into EC2 → Run Docker container → Access via public IP
 📁 Project Structure
 task-manager-devops/
 │
@@ -171,9 +170,11 @@ Monitoring (Prometheus + Grafana)
 
 ⚠️ Known Limitations
 
-Data is stored using localStorage (browser only)
+Data stored using localStorage (browser only)
 
-No backend/database (data not shared across devices)
+No backend/database
+
+Data not shared across devices
 
 🚀 Future Improvements
 
