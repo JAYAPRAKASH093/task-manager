@@ -48,24 +48,22 @@ cd task-manager-devops
 npm install
 🔹 3. Run Tests
 npm test
-🐳 Docker Setup
+### 🐳 Docker Setup
 🔹 Build Docker Image
 docker build -t task-manager .
 🔹 Run Docker Container
 docker run -d -p 80:80 task-manager
-🌍 Access Application
+### 🌍 Access Application
 http://localhost
-☁️ AWS Deployment (EC2)
+### ☁️ AWS Deployment (EC2)
 🔹 Steps
 
 Launch EC2 instance (Ubuntu)
 
 Connect via SSH:
-
 ssh -i <key.pem> ubuntu@<public-ip>
 
 Install Docker:
-
 sudo apt update
 sudo apt install docker.io -y
 
@@ -75,9 +73,9 @@ git clone <repo-url>
 cd task-manager-devops
 docker build -t task-manager .
 docker run -d -p 80:80 task-manager
-🌍 Access Live App
+## 🌍 Access Live App
 http://<your-public-ip>
-🔄 CI/CD Pipeline (GitHub Actions)
+## 🔄 CI/CD Pipeline (GitHub Actions)
 🔹 Features
 
 Runs on push and pull requests
@@ -90,7 +88,7 @@ Builds Docker image
 
 🔹 Workflow Location
 .github/workflows/ci.yml
-📊 Monitoring Setup
+## 📊 Monitoring Setup
 🔹 Prometheus
 docker run -d \
   --name prometheus \
@@ -120,8 +118,8 @@ Password: admin
 Add Prometheus as data source
 
 Use query:
-
 up
+
 🧠 Meaning
 1 → Application is running
 0 → Application is down
@@ -133,6 +131,7 @@ docker build -t task-manager .
 docker run -p 80:80 task-manager
 🔹 AWS
 SSH into EC2 → Run Docker container → Access via public IP
+
 📁 Project Structure
 task-manager-devops/
 │
