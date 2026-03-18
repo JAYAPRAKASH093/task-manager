@@ -41,7 +41,7 @@ Ensure you have the following installed:
 
 ```bash
 
-### 🔹 1. Clone Repository
+🔹 1. Clone Repository
 git clone https://github.com/<your-username>/task-manager-devops.git
 cd task-manager-devops
 🔹 2. Install Dependencies (for testing)
