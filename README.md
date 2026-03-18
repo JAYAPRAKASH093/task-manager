@@ -48,14 +48,14 @@ cd task-manager-devops
 npm install
 🔹 3. Run Tests
 npm test
-### 🐳 Docker Setup
+🐳 Docker Setup
 🔹 Build Docker Image
 docker build -t task-manager .
 🔹 Run Docker Container
 docker run -d -p 80:80 task-manager
-### 🌍 Access Application
+🌍 Access Application
 http://localhost
-### ☁️ AWS Deployment (EC2)
+☁️ AWS Deployment (EC2)
 🔹 Steps
 
 Launch EC2 instance (Ubuntu)
@@ -73,9 +73,9 @@ git clone <repo-url>
 cd task-manager-devops
 docker build -t task-manager .
 docker run -d -p 80:80 task-manager
-## 🌍 Access Live App
+🌍 Access Live App
 http://<your-public-ip>
-## 🔄 CI/CD Pipeline (GitHub Actions)
+🔄 CI/CD Pipeline (GitHub Actions)
 🔹 Features
 
 Runs on push and pull requests
@@ -88,7 +88,7 @@ Builds Docker image
 
 🔹 Workflow Location
 .github/workflows/ci.yml
-## 📊 Monitoring Setup
+📊 Monitoring Setup
 🔹 Prometheus
 docker run -d \
   --name prometheus \
