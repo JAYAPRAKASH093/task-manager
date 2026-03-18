@@ -39,9 +39,9 @@ Ensure you have the following installed:
 
 ## ⚙️ Setup Instructions
 
-### 🔹 1. Clone Repository
-
 ```bash
+
+### 🔹 1. Clone Repository
 git clone https://github.com/<your-username>/task-manager-devops.git
 cd task-manager-devops
 🔹 2. Install Dependencies (for testing)
