@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npx jest
+        run: node node_modules/jest/bin/jest.js
 
       - name: Build Docker image
         run: docker build -t task-manager .
